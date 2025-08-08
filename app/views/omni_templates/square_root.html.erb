@@ -1,0 +1,17 @@
+<form action="/process_square_root" method="get">
+  <div>
+    <label for="number_input">
+      Enter a number
+    </label>
+
+    <input id="number_input" text="text" name="user_number" placeholder="What number do you want to take the square root of?">
+  </div>
+
+  <button type="submit">
+    Calculate square root
+  </button>
+</form>
+
+<a href="/process_roll?dice=<%= @num_dice %>&sides=<%= @sides %>">
+  Roll <%= @num_dice %>d<%= @sides %> again
+</a>

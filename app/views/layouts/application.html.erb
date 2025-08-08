@@ -1,13 +1,65 @@
+
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Omnicalc 1</title>
+    <title>Target: Omnicalc 1</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="icon" href="/icon.png">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
   </head>
 
-  <body>
-    <%= yield %>
+  <body class="pico">
+    <header>
+      <div class="container">
+        <nav>
+          <div>
+            <a href="/">
+              <strong>Calculators</strong>
+            </a>
+          </div>
+          <div>
+            <a href="/">
+              Square Calculator
+            </a>
+          </div>
+          <div>
+            <a href="/square_root">
+              Square Root Calculator
+            </a>
+          </div>
+          <div>
+            <a href="/payment">
+              Payment Calculator
+            </a>
+          </div>
+          <div>
+            <a href="/random">
+              Random Number Generator
+            </a>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <form action="/square_root/results">
+  <div>
+    <label for="number_input">
+      Enter a number
+    </label>
+
+    <input id="number_input" text="text" name="user_number" placeholder="What number do you want to take the square root of?">
+  </div>
+
+  <button type="submit">
+    Calculate square root
+  </button>
+</form>
+
+      </div>
+    </main>
   </body>
 </html>
