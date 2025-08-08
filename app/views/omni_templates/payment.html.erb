@@ -1,21 +1,26 @@
 <form action="/payment/results">
   <div>
     <label for="APR">
-      Enter a number
+      APR
     </label>
+
+        <input id="apr" type="number" name="user_apr" placeholder="e.g. 5.42">
 
     <label for="num_years">
-      Enter a number
+      Number of years
     </label>
+
+         <input id="num_years" type="number" name="user_num_years" placeholder="How many years to repay?">
 
     <label for="principal">
-      Enter a number
+      Principal
     </label>
+         
+         <input id="principal" type="number" name="user_principal" placeholder="How much principal?">
 
-    <input id="user_input" type="text" name="user_number" placeholder="What number do you want to take the square root of?">
   </div>
 
   <button type="submit">
-    Calculate square
+    Calculate monthly payment
   </button>
 </form>

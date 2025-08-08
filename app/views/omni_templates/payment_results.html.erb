@@ -1,0 +1,10 @@
+<h1>Payment Results</h1>
+
+<p>APR: <%= params.fetch("user_apr") %></p>
+<p>Number of years: <%= params.fetch("user_num_years") %></p>
+<p>Principal: <%= params.fetch("user_principal") %></p>
+
+<h1>Monthly Payment</h1>
+<p>Your monthly payment is <%= @payment.to_fs(:currency) %></p>
+
+<a href="/payment">Calculate another payment</a>
