@@ -1,4 +1,3 @@
-<h1><%= @num_dice %>d<%= @sides %></h1>
 <h1>Square Results</h1>
 
 <dl>
@@ -6,23 +5,23 @@
     Number
   </dt>
   <dd>
-    49
+    @user_number
+    squared_number = @user_number ** 2
   </dd>
 
   <dt>
     Square
   </dt>
   <dd>
-    2401.0
+    puts squared_number
   </dd>
 </dl>
 
 
 
-<a href="/process_square?omni=<%= @num_dice %>&sides=<%= @sides %>">
-  Roll <%= @num_dice %>d<%= @sides %> again
+<a href="/process_square?omni=<%= @user_number %>&square=<%= @squared_number %>">
 </a>
 
-<a href="/square/new">
+<a href="/square">
   Calculate another square
 </a>
