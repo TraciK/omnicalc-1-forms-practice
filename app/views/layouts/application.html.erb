@@ -25,7 +25,7 @@
             </a>
           </div>
           <div>
-            <a href="/square_root">
+            <a href="/squareroot">
               Square Root Calculator
             </a>
           </div>
@@ -45,19 +45,7 @@
 
     <main>
       <div class="container">
-        <form action="/square_results">
-  <div>
-    <label for="number_input">
-      Enter a number
-    </label>
-
-    <input id="number_input" text="text" name="user_number" placeholder="What number do you want to take the square root of?">
-  </div>
-
-  <button type="submit">
-    Calculate square root
-  </button>
-</form>
+        <%= yield %>
 
       </div>
     </main>

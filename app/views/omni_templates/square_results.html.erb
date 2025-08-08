@@ -1,26 +1,12 @@
 <h1>Square Results</h1>
 
-<dl>
-  <dt>
-    Number
-  </dt>
-  <dd>
-    @user_number
-    squared_number = @user_number ** 2
-  </dd>
 
-  <dt>
-    Square
-  </dt>
-  <dd>
-    puts squared_number
-  </dd>
-</dl>
+<p> Number <%= @user_number %></p>
 
 
+<% squared_number = @user_number**2 %>
 
-<a href="/process_square?omni=<%= @user_number %>&square=<%= @squared_number %>">
-</a>
+<p>Square <%= squared_number %></p>
 
 <a href="/square">
   Calculate another square
