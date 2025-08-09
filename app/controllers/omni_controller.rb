@@ -41,6 +41,8 @@ class OmniController < ApplicationController
     @denominator = 1 - (1 + r) ** -n
     @payment     = @numerator / @denominator
     @present_value        = pv
+    @apr = apr
+    @year = years
 
     render({ :template => "omni_templates/payment_results" })
   end

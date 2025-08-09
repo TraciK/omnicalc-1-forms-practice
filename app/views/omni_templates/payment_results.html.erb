@@ -1,7 +1,7 @@
 <h1>Payment Results</h1>
 
-<p>APR: <%= params.fetch("user_apr") %></p>
-<p>Number of years: <%= params.fetch("user_num_years") %></p>
+<p>APR: <%= @apr.to_fs(:percentage, { :precision => 4}) %></p>
+<p>Number of years: <%= @years %></p>
 <p>Principal: <%= @present_value.to_fs(:currency) %></p>
 
 <h1>Monthly Payment</h1>
