@@ -1,15 +1,19 @@
 Rails.application.routes.draw do
   get("/", { :controller => "omni", :action => "render_homepage" })
 
-  get("/square", { :controller => "omni", :action => "square" })
+  get("/square/new", { :controller => "omni", :action => "square" })
 
-    get("/square/results", { :controller => "omni", :action => "square_results" })
+   get("/square/results", { :controller => "omni", :action => "square_results" })
 
-  get("/squareroot", { :controller => "omni", :action => "squareroot" })
+  get("/square_root/new", { :controller => "omni", :action => "square_root" })
 
-    get("/squareroot/results", { :controller => "omni", :action => "squareroot_results"})
+   get("/square_root/results", { :controller => "omni", :action => "square_root_results"})
 
-  get("/payment", { :controller => "omni", :action => "payment" })
+  get("/payment/new", { :controller => "omni", :action => "payment" })
 
-    get("/payment/results", { :controller => "omni", :action => "payment_results"})
+   get("/payment/results", { :controller => "omni", :action => "payment_results"})
+
+  get("/random/new", { :controller => "omni", :action => "random" })
+
+   get("/random/results", { :controller => "omni", :action => "random_results"})
 end
